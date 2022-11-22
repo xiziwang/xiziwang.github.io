@@ -82,8 +82,20 @@ const webcamButton = document.getElementById('webcamButton')
 const video = document.getElementById('webcam');
 const liveView = document.getElementById('liveView');
 
+var isFront = true;
+const flipCameraButton = document.getElementById("flip-button");
+flipCameraButton.addEventListener("click", () => {
+  isFront = !isFront;
+  if(isFront){
+    flipCameraButton.innerText = 'Camera: Front'
+  }
+  else {
+    flipCameraButton.innerText = 'Camera: Back'
+  }
+});
+
 // hide the button before the model is loaded
-webcamButton.style.visibility = 'hidden'
+webcamButton.style.visibility = 'hidden';
 // TODO: Show loading message
 
 
@@ -121,10 +133,13 @@ if (hasGetUserMedia()) {
 function enableCamera(event) {
   // Hide the button.
   webcamButton.style.visibility = 'hidden'
-  
+  flipCameraButton.visibility = 'hidden'
+
   // getUsermedia parameters.
   const constraints = {
-    video: true
+    audio: false,
+    video: {facingMode: isFront ? "user" : "environment" }
+    // video: true
   };
 
   // Activate the webcam stream.
