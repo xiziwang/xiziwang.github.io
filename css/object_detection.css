@@ -12,10 +12,22 @@
   color: #FFF;
   border: 1px dashed rgba(255, 255, 255, 0.7);
   z-index: 2;
-  font-size: 12px;
+  font-size: 30px;
   margin: 0;
 }
 
+.videoView button{
+  position: absolute;
+/*  border-radius: 50%;*/
+  background-color: rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0);
+  z-index: 4;
+}
+
+.videoView i{
+  font-size: 48px;
+  color: rgba(255, 225, 225, 1)
+}
 
 .videoView {
   position: relative;
