@@ -972,7 +972,11 @@ var model = undefined;
 const webcamButton = document.getElementById('webcamButton') 
 const video = document.getElementById('webcam');
 const liveView = document.getElementById('liveView');
-const playWordButton = document.getElementById('play-word-button');
+
+// Set up play icon
+const playIcon = document.createElement('i');
+playIcon.setAttribute('class', 'fa fa-play-circle');
+// const playWordButton = document.getElementById('play-word-button');
 
 var isFront = true;
 const flipCameraButton = document.getElementById("flip-button");
@@ -1007,25 +1011,25 @@ function hasGetUserMedia() {
 
 
 // https://medium.com/@dlyall/letting-the-browser-speak-the-web-speech-api-1df6048f4816
-var word = '自行车';
+// var word = '音乐';
 
-playWordButton.addEventListener("click", () => {
-  // Feature detect
-  if (
-    window.speechSynthesis &&
-    typeof SpeechSynthesisUtterance !== undefined
-  ) {
-    const synth = window.speechSynthesis;
-    // get all the voices available on your browser
-    const voices = synth.getVoices();
-    // find a voice that can speak chinese
-    const voice = voices.filter((voice) => voice.lang.indexOf('zh') === 0)[0];
-    // make the browser speak!
-    const utterThis = new SpeechSynthesisUtterance(word);
-    utterThis.voice = voice;
-    synth.speak(utterThis);
-  }
-});
+// playWordButton.addEventListener("click", () => {
+//   // Feature detect
+//   if (
+//     window.speechSynthesis &&
+//     typeof SpeechSynthesisUtterance !== undefined
+//   ) {
+//     const synth = window.speechSynthesis;
+//     // get all the voices available on your browser
+//     const voices = synth.getVoices();
+//     // find a voice that can speak chinese
+//     const voice = voices.filter((voice) => voice.lang.indexOf('zh') === 0)[0];
+//     // make the browser speak!
+//     const utterThis = new SpeechSynthesisUtterance(word);
+//     utterThis.voice = voice;
+//     synth.speak(utterThis);
+//   }
+// });
 
 // Keep a reference of all the child elements we create
 // so we can remove them easilly on each render.
@@ -1079,9 +1083,11 @@ function predictWebcam() {
     for (let n = 0; n < predictions.length; n++) {
       // If we are over 66% sure we are sure we classified it right, draw it!
       if (predictions[n].score > 0.5) {
+        const word = dictionary[predictions[n].class]['cn'].hanzi;
+        const pinyin = dictionary[predictions[n].class]['cn'].pinyin;
+
         const p = document.createElement('p');
-        p.innerText = predictions[n].class + ' - ' + dictionary[predictions[n].class]['cn'].hanzi 
-            + ' (' + dictionary[predictions[n].class]['cn'].pinyin + ')';
+        p.innerText = '     ' + word + ' (' + pinyin + ')' + ' : ' + predictions[n].class;
              // + ' - with ' + Math.round(parseFloat(predictions[n].score) * 100) 
             // + '%';
         // Draw in top left of bounding box outline.
@@ -1097,10 +1103,39 @@ function predictWebcam() {
             + predictions[n].bbox[2] + 'px; height: '
             + predictions[n].bbox[3] + 'px;';
 
+        // draw play button
+
+        const leftPos = predictions[n].bbox[0]+predictions[n].bbox[2]-50;
+        const playWordButton = document.createElement('button');
+        playWordButton.style = 'left: ' + leftPos + 'px;' +
+        'top: ' + predictions[n].bbox[1] + 'px;';
+        // playWordButton.innerText = 'Play';
+        playWordButton.appendChild(playIcon);
+        playWordButton.addEventListener("click", () => {
+          // Feature detect
+          if (
+            window.speechSynthesis &&
+            typeof SpeechSynthesisUtterance !== undefined
+          ) {
+            console.log('playing')
+            const synth = window.speechSynthesis;
+            // get all the voices available on your browser
+            const voices = synth.getVoices();
+            // find a voice that can speak chinese
+            const voice = voices.filter((voice) => voice.lang.indexOf('zh') === 0)[0];
+            // make the browser speak!
+            const utterThis = new SpeechSynthesisUtterance(word);
+            utterThis.voice = voice;
+            synth.speak(utterThis);
+          }
+        });
+
+        liveView.appendChild(playWordButton);
         liveView.appendChild(highlighter);
         liveView.appendChild(p);
         
         // Store drawn objects in memory so we can delete them next time around.
+        children.push(playWordButton);
         children.push(highlighter);
         children.push(p);
       }
