@@ -16,6 +16,895 @@
  */
 
 
+/*
+ * The COCO-SSD only recognizes 80 objects listed in: 
+ * https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/src/classes.ts
+ */
+
+// Translations are from: https://jisho.org/search/person
+// https://www.archchinese.com/
+const dictionary = {
+  'person': {
+    'jp': {
+      'kanji': '人',
+      'writing': 'ひと',
+      'romaji': 'hito'
+    },
+    'cn': {
+      'hanzi': '人',
+      'pinyin': 'rén'
+    }
+  },
+  'bicycle': {
+    'jp': {
+      'kanji': '自転車',
+      'writing': 'じ てん しゃ',
+      'romaji': 'ji ten sha'
+    },
+    'cn': {
+      'hanzi': '自行车',
+      'pinyin': 'zì xíng chē'
+    }
+  },
+  'car': {
+    'jp': {
+      'kanji': '自動車',
+      'writing': 'じ どう しゃ',
+      'romaji': 'ji dou sha'
+    },
+    'cn': {
+      'hanzi': '车',
+      'pinyin': 'chē'
+    }      
+  },
+  'motorcycle': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }   
+  },
+  'airplane': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bus': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'train' : {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'truck' : {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'boat': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'traffic light': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'fire hydrant': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'stop sign': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'parking meter': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bench': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bird': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'cat': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'dog': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'horse': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'sheep': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'cow': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'elephant': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bear': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'zebra': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'giraffe': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'backpack': {
+    'jp': {
+      'kanji': 'バックパック',
+      'writing': '',
+      'romaji': 'bakku pakku'
+    },
+    'cn': {
+      'hanzi': '背包',
+      'pinyin': 'bèi bāo'
+    }  
+  },
+  'umbrella': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'handbag': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'tie': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'suitcase': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'frisbee': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'skis': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'snowboard': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'sports ball': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'kite': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'baseball bat': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'baseball glove': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'skateboard': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'surfboard': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'tennis racket': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bottle': {
+    'jp': {
+      'kanji': '瓶',
+      'writing': 'びん',
+      'romaji': 'bin'
+    },
+    'cn': {
+      'hanzi': '瓶子',
+      'pinyin': 'píng zi'
+    }  
+  },
+  'wine glass': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'cup': {
+    'jp': {
+      'kanji': 'カップ',
+      'writing': '',
+      'romaji': 'kappu'
+    },
+    'cn': {
+      'hanzi': '杯子',
+      'pinyin': 'bēi zi'
+    }  
+  },
+  'fork': {
+    'jp': {
+      'kanji': 'フォーク',
+      'writing': '',
+      'romaji': 'fooku'
+    },
+    'cn': {
+      'hanzi': '叉子',
+      'pinyin': 'chā zi'
+    }  
+  },
+  'knife': {
+    'jp': {
+      'kanji': 'ナイフ',
+      'writing': '',
+      'romaji': 'naifu'
+    },
+    'cn': {
+      'hanzi': '刀子',
+      'pinyin': 'dāo zi'
+    }  
+  },
+  'spoon': {
+    'jp': {
+      'kanji': '匙',
+      'writing': 'さじ',
+      'romaji': 'saji'
+    },
+    'cn': {
+      'hanzi': '调羹',
+      'pinyin': 'tiáo gēng'
+    }  
+  },
+  'bowl': {
+    'jp': {
+      'kanji': '器',
+      'writing': 'うつわ',
+      'romaji': 'utsuwa'
+    },
+    'cn': {
+      'hanzi': '碗',
+      'pinyin': 'wǎn'
+    }  
+  },
+  'banana': {
+    'jp': {
+      'kanji': 'バナナ',
+      'writing': '',
+      'romaji': 'banana'
+    },
+    'cn': {
+      'hanzi': '香蕉',
+      'pinyin': 'xiāng jiāo'
+    }  
+  },
+  'apple': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'sandwich': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'orange': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'broccoli': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'carrot': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'hot dog': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'pizza': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'donut': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'cake': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'chair': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'couch': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'potted plant': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'bed': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'dining table': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'toilet': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'tv': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'laptop': {
+    'jp': {
+      'kanji': 'ノートパソコン',
+      'writing': '',
+      'romaji': 'nooto pasoko'
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'mouse': {
+    'jp': {
+      'kanji': 'マウス',
+      'writing': '',
+      'romaji': 'mausu'
+    },
+    'cn': {
+      'hanzi': '鼠标',
+      'pinyin': 'shǔ biāo'
+    }  
+  },
+  'remote': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'keyboard': {
+    'jp': {
+      'kanji': '鍵盤',
+      'writing': 'けん ばん',
+      'romaji': 'ken ban'
+    },
+    'cn': {
+      'hanzi': '键盘',
+      'pinyin': 'jian pan'
+    }  
+  },
+  'cell phone': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '手机',
+      'pinyin': 'shǒu jī'
+    }  
+  },
+  'microwave': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'oven': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'toaster': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'sink': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'refrigerator': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'book': {
+    'jp': {
+      'kanji': '本',
+      'writing': 'ほん',
+      'romaji': 'hon'
+    },
+    'cn': {
+      'hanzi': '书',
+      'pinyin': 'shu'
+    }  
+  },
+  'clock': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'vase': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'scissors': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'teddy bear': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'hair drier': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  },
+  'toothbrush': {
+    'jp': {
+      'kanji': '',
+      'writing': '',
+      'romaji': ''
+    },
+    'cn': {
+      'hanzi': '',
+      'pinyin': ''
+    }  
+  }
+};
 
 
 // // /********************************************************************
@@ -76,11 +965,14 @@
 // }
 
 
+
+
 // Part of the code were from https://glitch.com/~tensorflow-js-object-detection
 var model = undefined;
 const webcamButton = document.getElementById('webcamButton') 
 const video = document.getElementById('webcam');
 const liveView = document.getElementById('liveView');
+const playWordButton = document.getElementById('play-word-button');
 
 var isFront = true;
 const flipCameraButton = document.getElementById("flip-button");
@@ -113,6 +1005,27 @@ function hasGetUserMedia() {
     navigator.mediaDevices.getUserMedia);
 }
 
+
+// https://medium.com/@dlyall/letting-the-browser-speak-the-web-speech-api-1df6048f4816
+var word = '';
+
+playWordButton.addEventListener("click", () => {
+  // Feature detect
+  if (
+    window.speechSynthesis &&
+    typeof SpeechSynthesisUtterance !== undefined
+  ) {
+    const synth = window.speechSynthesis;
+    // get all the voices available on your browser
+    const voices = synth.getVoices();
+    // find a voice that can speak chinese
+    const voice = voices.filter((voice) => voice.lang.indexOf('zh') === 0)[0];
+    // make the browser speak!
+    const utterThis = new SpeechSynthesisUtterance(word);
+    utterThis.voice = voice;
+    synth.speak(utterThis);
+  }
+});
 
 // Keep a reference of all the child elements we create
 // so we can remove them easilly on each render.
@@ -156,6 +1069,7 @@ function predictWebcam() {
   model.detect(video).then(function (predictions) {
     // Remove any highlighting we did previous frame.
     for (let i = 0; i < children.length; i++) {
+      console.log("removing ")
       liveView.removeChild(children[i]);
     }
     children.splice(0);
@@ -164,11 +1078,12 @@ function predictWebcam() {
     // they have a high confidence score.
     for (let n = 0; n < predictions.length; n++) {
       // If we are over 66% sure we are sure we classified it right, draw it!
-      if (predictions[n].score > 0.66) {
+      if (predictions[n].score > 0.5) {
         const p = document.createElement('p');
-        p.innerText = predictions[n].class  + ' - with ' 
-            + Math.round(parseFloat(predictions[n].score) * 100) 
-            + '% confidence.';
+        p.innerText = predictions[n].class + ' - ' + dictionary[predictions[n].class]['cn'].hanzi 
+            + ' (' + dictionary[predictions[n].class]['cn'].pinyin + ')';
+             // + ' - with ' + Math.round(parseFloat(predictions[n].score) * 100) 
+            // + '%';
         // Draw in top left of bounding box outline.
         p.style = 'left: ' + predictions[n].bbox[0] + 'px;' +
             'top: ' + predictions[n].bbox[1] + 'px;' + 
