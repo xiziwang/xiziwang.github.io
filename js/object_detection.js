@@ -1007,7 +1007,7 @@ function hasGetUserMedia() {
 
 
 // https://medium.com/@dlyall/letting-the-browser-speak-the-web-speech-api-1df6048f4816
-var word = '';
+var word = '自行车';
 
 playWordButton.addEventListener("click", () => {
   // Feature detect
