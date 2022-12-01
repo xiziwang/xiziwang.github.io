@@ -28,7 +28,7 @@ const dictionary = {
     'jp': {
       'kanji': '人',
       'writing': 'ひと',
-      'romaji': 'hito'
+      'romaji': 'hi to'
     },
     'cn': {
       'hanzi': '人',
@@ -59,232 +59,232 @@ const dictionary = {
   },
   'motorcycle': {
     'jp': {
-      'kanji': '',
+      'kanji': 'オートバイ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'o to ba i'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '摩托车',
       'pinyin': ''
     }   
   },
   'airplane': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '飛行機',
+      'writing': 'ひ こう き',
+      'romaji': 'hi kou ki'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '飞机',
       'pinyin': ''
     }  
   },
   'bus': {
     'jp': {
-      'kanji': '',
+      'kanji': 'バス',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ba su'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '公共汽车',
       'pinyin': ''
     }  
   },
   'train' : {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '電車',
+      'writing': 'でん しゃ',
+      'romaji': 'den sha'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '火车',
       'pinyin': ''
     }  
   },
   'truck' : {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '貨物自動車',
+      'writing': 'か もつ じ どう しゃ',
+      'romaji': 'ka mo tsu ji dou sha'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '货车',
       'pinyin': ''
     }  
   },
   'boat': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '船',
+      'writing': 'ふね',
+      'romaji': 'fu ne'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '船',
       'pinyin': ''
     }  
   },
   'traffic light': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '信号機',
+      'writing': 'しん ごう き',
+      'romaji': 'shin gou ki'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '红绿灯',
       'pinyin': ''
     }  
   },
   'fire hydrant': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '消火栓',
+      'writing': 'しょう か せん',
+      'romaji': 'shou ka sen'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '消防栓',
       'pinyin': ''
     }  
   },
   'stop sign': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '止まれ',
+      'writing': 'と + +',
+      'romaji': 'to ma re'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '停止标志',
       'pinyin': ''
     }  
   },
   'parking meter': {
     'jp': {
-      'kanji': '',
+      'kanji': 'パーキングメーター',
       'writing': '',
-      'romaji': ''
+      'romaji': 'pā kin gu mē tā'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '停车收费秒表',
       'pinyin': ''
     }  
   },
   'bench': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '縁台',
+      'writing': 'えん だい',
+      'romaji': 'en dai'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '长椅',
       'pinyin': ''
     }  
   },
   'bird': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '鳥',
+      'writing': 'とり',
+      'romaji': 'to ri'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '鸟',
       'pinyin': ''
     }  
   },
   'cat': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '猫',
+      'writing': 'ねこ',
+      'romaji': 'ne ko'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '猫',
       'pinyin': ''
     }  
   },
   'dog': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '犬',
+      'writing': 'いぬ',
+      'romaji': 'i nu'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '狗',
       'pinyin': ''
     }  
   },
   'horse': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '馬',
+      'writing': 'うま',
+      'romaji': 'u ma'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '马',
       'pinyin': ''
     }  
   },
   'sheep': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '羊',
+      'writing': 'ひつじ',
+      'romaji': 'hi tsu ji'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '羊',
       'pinyin': ''
     }  
   },
   'cow': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '牛',
+      'writing': 'うし',
+      'romaji': 'u shi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '牛',
       'pinyin': ''
     }  
   },
   'elephant': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '象',
+      'writing': 'ぞう',
+      'romaji': 'zo u'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '象',
       'pinyin': ''
     }  
   },
   'bear': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '熊',
+      'writing': 'くま',
+      'romaji': 'ku ma'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '熊',
       'pinyin': ''
     }  
   },
   'zebra': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '縞馬',
+      'writing': 'しま うま',
+      'romaji': 'shi ma u ma'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '斑马',
       'pinyin': ''
     }  
   },
   'giraffe': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ジラフ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ji ra fu'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '长颈鹿',
       'pinyin': ''
     }  
   },
@@ -292,7 +292,7 @@ const dictionary = {
     'jp': {
       'kanji': 'バックパック',
       'writing': '',
-      'romaji': 'bakku pakku'
+      'romaji': 'ba kku pa kku'
     },
     'cn': {
       'hanzi': '背包',
@@ -301,155 +301,155 @@ const dictionary = {
   },
   'umbrella': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '傘',
+      'writing': 'かさ',
+      'romaji': 'ka sa'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '雨伞',
       'pinyin': ''
     }  
   },
   'handbag': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '手提げ',
+      'writing': 'て さ +',
+      'romaji': 'te sa ge'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '手提包',
       'pinyin': ''
     }  
   },
   'tie': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ネクタイ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ne ku ta i'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '领带',
       'pinyin': ''
     }  
   },
   'suitcase': {
     'jp': {
-      'kanji': '',
+      'kanji': 'スーツケース',
       'writing': '',
-      'romaji': ''
+      'romaji': 'sū tsu kē su'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '行李箱',
       'pinyin': ''
     }  
   },
   'frisbee': {
     'jp': {
-      'kanji': '',
-      'writing': '',
+      'kanji': 'フライングディスク',
+      'writing': 'fu ra i n gu di su ku',
       'romaji': ''
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '飞盘',
       'pinyin': ''
     }  
   },
   'skis': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': 'スキー板',
+      'writing': '+ + + いた',
+      'romaji': 'su kī i ta'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '滑雪板',
       'pinyin': ''
     }  
   },
   'snowboard': {
     'jp': {
-      'kanji': '',
+      'kanji': 'スノーボード',
       'writing': '',
-      'romaji': ''
+      'romaji': 'su no bo do'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '滑雪板',
       'pinyin': ''
     }  
   },
   'sports ball': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '玉',
+      'writing': 'たま',
+      'romaji': 'ta ma'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '球',
       'pinyin': ''
     }  
   },
   'kite': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '来手',
+      'writing': 'き て',
+      'romaji': 'ki te'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '风筝',
       'pinyin': ''
     }  
   },
   'baseball bat': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '野球用バット',
+      'writing': 'や きゅう よ + + +',
+      'romaji': 'ya kyuu yo ba tto'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '棒球棒',
       'pinyin': ''
     }  
   },
   'baseball glove': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '野球用グローブ',
+      'writing': 'や きゅう よ + + + +',
+      'romaji': 'ya kyuu yo gu ro bu'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '棒球手套',
       'pinyin': ''
     }  
   },
   'skateboard': {
     'jp': {
-      'kanji': '',
+      'kanji': 'スケートボード',
       'writing': '',
-      'romaji': ''
+      'romaji': 'su kē to bō do'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '滑板',
       'pinyin': ''
     }  
   },
   'surfboard': {
     'jp': {
-      'kanji': '',
+      'kanji': 'サーフボード',
       'writing': '',
-      'romaji': ''
+      'romaji': 'sā fu bō do'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '冲浪板',
       'pinyin': ''
     }  
   },
   'tennis racket': {
     'jp': {
-      'kanji': '',
+      'kanji': 'テニスラケット',
       'writing': '',
-      'romaji': ''
+      'romaji': 'te ni su ra ke tto'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '网球拍',
       'pinyin': ''
     }  
   },
@@ -457,7 +457,7 @@ const dictionary = {
     'jp': {
       'kanji': '瓶',
       'writing': 'びん',
-      'romaji': 'bin'
+      'romaji': 'bi n'
     },
     'cn': {
       'hanzi': '瓶子',
@@ -466,12 +466,12 @@ const dictionary = {
   },
   'wine glass': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ワイングラス',
       'writing': '',
-      'romaji': ''
+      'romaji': 'wa i n gu ra su'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '红酒杯',
       'pinyin': ''
     }  
   },
@@ -479,7 +479,7 @@ const dictionary = {
     'jp': {
       'kanji': 'カップ',
       'writing': '',
-      'romaji': 'kappu'
+      'romaji': 'ka ppu'
     },
     'cn': {
       'hanzi': '杯子',
@@ -490,7 +490,7 @@ const dictionary = {
     'jp': {
       'kanji': 'フォーク',
       'writing': '',
-      'romaji': 'fooku'
+      'romaji': 'foo ku'
     },
     'cn': {
       'hanzi': '叉子',
@@ -501,7 +501,7 @@ const dictionary = {
     'jp': {
       'kanji': 'ナイフ',
       'writing': '',
-      'romaji': 'naifu'
+      'romaji': 'na i fu'
     },
     'cn': {
       'hanzi': '刀子',
@@ -512,7 +512,7 @@ const dictionary = {
     'jp': {
       'kanji': '匙',
       'writing': 'さじ',
-      'romaji': 'saji'
+      'romaji': 'sa ji'
     },
     'cn': {
       'hanzi': '调羹',
@@ -523,7 +523,7 @@ const dictionary = {
     'jp': {
       'kanji': '器',
       'writing': 'うつわ',
-      'romaji': 'utsuwa'
+      'romaji': 'u tsu wa'
     },
     'cn': {
       'hanzi': '碗',
@@ -534,7 +534,7 @@ const dictionary = {
     'jp': {
       'kanji': 'バナナ',
       'writing': '',
-      'romaji': 'banana'
+      'romaji': 'ba na na'
     },
     'cn': {
       'hanzi': '香蕉',
@@ -543,177 +543,177 @@ const dictionary = {
   },
   'apple': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '林檎',
+      'writing': 'りん ご',
+      'romaji': 'ri n go'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '苹果',
       'pinyin': ''
     }  
   },
   'sandwich': {
     'jp': {
-      'kanji': '',
+      'kanji': 'サンドイッチ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'sa n do i cchi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '三明治',
       'pinyin': ''
     }  
   },
   'orange': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '蜜柑',
+      'writing': 'み かん',
+      'romaji': 'mi ka n'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '橘子',
       'pinyin': ''
     }  
   },
   'broccoli': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ブロコリ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'bu ro ko ri'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '西兰花',
       'pinyin': ''
     }  
   },
   'carrot': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '人参',
+      'writing': 'にん じん',
+      'romaji': 'ni n ji n'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '胡萝卜',
       'pinyin': ''
     }  
   },
   'hot dog': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ホットドッグ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ho tto dog gu'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '热狗',
       'pinyin': ''
     }  
   },
   'pizza': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ピザ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'pi za'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '披萨',
       'pinyin': ''
     }  
   },
   'donut': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ドーナツ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'dō na tsu'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '甜甜圈',
       'pinyin': ''
     }  
   },
   'cake': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ケーキ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'kē ki'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '蛋糕',
       'pinyin': ''
     }  
   },
   'chair': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '椅子',
+      'writing': 'い す',
+      'romaji': 'i su'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '椅子',
       'pinyin': ''
     }  
   },
   'couch': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ソファ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'so fa'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '沙发',
       'pinyin': ''
     }  
   },
   'potted plant': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '鉢植え',
+      'writing': 'はち う +',
+      'romaji': 'ha chi u e'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '盆植',
       'pinyin': ''
     }  
   },
   'bed': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ベッド',
       'writing': '',
-      'romaji': ''
+      'romaji': 'be ddo'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '床',
       'pinyin': ''
     }  
   },
   'dining table': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '食卓',
+      'writing': 'しょく たく',
+      'romaji': 'sho ku ta ku'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '餐桌',
       'pinyin': ''
     }  
   },
   'toilet': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': 'お手洗い',
+      'writing': '+ て あら +',
+      'romaji': 'o te a ra i'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '洗手间',
       'pinyin': ''
     }  
   },
   'tv': {
     'jp': {
-      'kanji': '',
+      'kanji': 'テレビ',
       'writing': '',
-      'romaji': ''
+      'romaji': 'te re bi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '电视机',
       'pinyin': ''
     }  
   },
@@ -721,10 +721,10 @@ const dictionary = {
     'jp': {
       'kanji': 'ノートパソコン',
       'writing': '',
-      'romaji': 'nooto pasoko'
+      'romaji': 'nō to pa so ko n'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '笔记本电脑',
       'pinyin': ''
     }  
   },
@@ -741,12 +741,12 @@ const dictionary = {
   },
   'remote': {
     'jp': {
-      'kanji': '',
+      'kanji': 'リモート',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ri mō to'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '遥控板',
       'pinyin': ''
     }  
   },
@@ -763,9 +763,9 @@ const dictionary = {
   },
   'cell phone': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '携帯電話',
+      'writing': 'けい たい でん わ',
+      'romaji': 'ke i ta i de n wa'
     },
     'cn': {
       'hanzi': '手机',
@@ -774,56 +774,56 @@ const dictionary = {
   },
   'microwave': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '電子レンジ',
+      'writing': 'でん し + + +',
+      'romaji': 'de n shi re n ji'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '微波炉',
       'pinyin': ''
     }  
   },
   'oven': {
     'jp': {
-      'kanji': '',
+      'kanji': 'オーブン',
       'writing': '',
-      'romaji': ''
+      'romaji': 'ō bun'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '烤箱',
       'pinyin': ''
     }  
   },
   'toaster': {
     'jp': {
-      'kanji': '',
+      'kanji': 'トースター',
       'writing': '',
-      'romaji': ''
+      'romaji': 'tō su tā'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '烤面包机',
       'pinyin': ''
     }  
   },
   'sink': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '流し',
+      'writing': 'なが +',
+      'romaji': 'na ga shi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '水槽',
       'pinyin': ''
     }  
   },
   'refrigerator': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '冷蔵庫',
+      'writing': 'れい ぞう こ',
+      'romaji': 're i zo u ko'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '冰箱',
       'pinyin': ''
     }  
   },
@@ -831,7 +831,7 @@ const dictionary = {
     'jp': {
       'kanji': '本',
       'writing': 'ほん',
-      'romaji': 'hon'
+      'romaji': 'ho n'
     },
     'cn': {
       'hanzi': '书',
@@ -840,67 +840,67 @@ const dictionary = {
   },
   'clock': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '時計',
+      'writing': 'と けい',
+      'romaji': 'to ke i'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '时钟',
       'pinyin': ''
     }  
   },
   'vase': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '花瓶',
+      'writing': 'か びん',
+      'romaji': 'ka bi n'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '花瓶',
       'pinyin': ''
     }  
   },
   'scissors': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '鋏',
+      'writing': 'はさみ',
+      'romaji': 'ha sa mi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '剪刀',
       'pinyin': ''
     }  
   },
   'teddy bear': {
     'jp': {
-      'kanji': '',
+      'kanji': 'テディーベア',
       'writing': '',
-      'romaji': ''
+      'romaji': 'te dī be a'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '泰迪熊',
       'pinyin': ''
     }  
   },
   'hair drier': {
     'jp': {
-      'kanji': '',
+      'kanji': 'ドライヤー',
       'writing': '',
-      'romaji': ''
+      'romaji': 'do ra i yā'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '吹风机',
       'pinyin': ''
     }  
   },
   'toothbrush': {
     'jp': {
-      'kanji': '',
-      'writing': '',
-      'romaji': ''
+      'kanji': '歯ブラシ',
+      'writing': 'は + + +',
+      'romaji': 'ha bu ra shi'
     },
     'cn': {
-      'hanzi': '',
+      'hanzi': '牙刷',
       'pinyin': ''
     }  
   }
@@ -970,16 +970,19 @@ const dictionary = {
 // Part of the code were from https://glitch.com/~tensorflow-js-object-detection
 var model = undefined;
 const webcamButton = document.getElementById('webcamButton') 
+const flipCameraButton = document.getElementById("flip-button");
+const languageButton = document.getElementById("language-button");
 const video = document.getElementById('webcam');
 const liveView = document.getElementById('liveView');
+
+var isFront = true;
+var isEnglish = true;
 
 // Set up play icon
 const playIcon = document.createElement('i');
 playIcon.setAttribute('class', 'fa fa-play-circle');
-// const playWordButton = document.getElementById('play-word-button');
 
-var isFront = true;
-const flipCameraButton = document.getElementById("flip-button");
+
 flipCameraButton.addEventListener("click", () => {
   isFront = !isFront;
   if(isFront){
@@ -987,6 +990,16 @@ flipCameraButton.addEventListener("click", () => {
   }
   else {
     flipCameraButton.innerText = 'Camera: Back'
+  }
+});
+
+languageButton.addEventListener("click", () => {
+  isEnglish = !isEnglish;
+  if(isEnglish){
+    languageButton.innerText = 'Prefer: English'
+  }
+  else {
+    languageButton.innerText = 'Prefer: 中文'
   }
 });
 
@@ -1050,7 +1063,7 @@ if (hasGetUserMedia()) {
 function enableCamera(event) {
   // Hide the button.
   webcamButton.style.visibility = 'hidden'
-  flipCameraButton.visibility = 'hidden'
+  flipCameraButton.style.visibility = 'hidden'
 
   // getUsermedia parameters.
   const constraints = {
@@ -1073,7 +1086,7 @@ function predictWebcam() {
   model.detect(video).then(function (predictions) {
     // Remove any highlighting we did previous frame.
     for (let i = 0; i < children.length; i++) {
-      console.log("removing ")
+      console.log("removing")
       liveView.removeChild(children[i]);
     }
     children.splice(0);
@@ -1083,17 +1096,29 @@ function predictWebcam() {
     for (let n = 0; n < predictions.length; n++) {
       // If we are over 66% sure we are sure we classified it right, draw it!
       if (predictions[n].score > 0.5) {
-        const word = dictionary[predictions[n].class]['cn'].hanzi;
-        const pinyin = dictionary[predictions[n].class]['cn'].pinyin;
+        const word = dictionary[predictions[n].class]['jp'].kanji;
+        const romaji = dictionary[predictions[n].class]['jp'].romaji;
+        // const word_gana = dictionary[predictions[n].class]['jp'].writing;
+        const hanzi = dictionary[predictions[n].class]['cn'].hanzi;
+        // const pinyin = dictionary[predictions[n].class]['cn'].pinyin;
+
 
         const p = document.createElement('p');
-        p.innerText = '     ' + word + ' (' + pinyin + ')' + ' : ' + predictions[n].class;
+        p.setAttribute('class', 'word');
+        p.innerText = word + ' (' + romaji + ')' + ' : ' + (isEnglish? predictions[n].class : hanzi);
              // + ' - with ' + Math.round(parseFloat(predictions[n].score) * 100) 
             // + '%';
         // Draw in top left of bounding box outline.
         p.style = 'left: ' + predictions[n].bbox[0] + 'px;' +
-            'top: ' + predictions[n].bbox[1] + 'px;' + 
-            'width: ' + (predictions[n].bbox[2] - 10) + 'px;';
+            'top: ' + (predictions[n].bbox[1]) + 'px;' + 
+            'width: ' + (predictions[n].bbox[2] - 60) + 'px;';
+
+        // const p2 = document.createElement('p');
+        // p2.innerText = word_gana;
+        // p2.setAttribute('class', 'gana');
+        // p2.style = 'left: ' + predictions[n].bbox[0] + 'px;' +
+        //     'top: ' + predictions[n].bbox[1] + 'px;' + 
+        //     'width: ' + (predictions[n].bbox[2] - 60) + 'px;';
 
         // Draw the actual bounding box.
         const highlighter = document.createElement('div');
@@ -1121,8 +1146,8 @@ function predictWebcam() {
             const synth = window.speechSynthesis;
             // get all the voices available on your browser
             const voices = synth.getVoices();
-            // find a voice that can speak chinese
-            const voice = voices.filter((voice) => voice.lang.indexOf('zh') === 0)[0];
+            // find a voice that can speak japanese
+            const voice = voices.filter((voice) => voice.lang.indexOf('ja') === 0)[0];
             // make the browser speak!
             const utterThis = new SpeechSynthesisUtterance(word);
             utterThis.voice = voice;
