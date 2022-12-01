@@ -1095,7 +1095,7 @@ function predictWebcam() {
     // they have a high confidence score.
     for (let n = 0; n < predictions.length; n++) {
       // If we are over 66% sure we are sure we classified it right, draw it!
-      if (predictions[n].score > 0.5) {
+      if (predictions[n].score > 0.6) {
         const word = dictionary[predictions[n].class]['jp'].kanji;
         const romaji = dictionary[predictions[n].class]['jp'].romaji;
         // const word_gana = dictionary[predictions[n].class]['jp'].writing;
