@@ -28,7 +28,7 @@ const dictionary = {
     'jp': {
       'kanji': '人',
       'writing': 'ひと',
-      'romaji': 'hi to'
+      'romaji': 'hito'
     },
     'cn': {
       'hanzi': '人',
@@ -116,7 +116,7 @@ const dictionary = {
     'jp': {
       'kanji': '船',
       'writing': 'ふね',
-      'romaji': 'fu ne'
+      'romaji': 'fune'
     },
     'cn': {
       'hanzi': '船',
@@ -182,7 +182,7 @@ const dictionary = {
     'jp': {
       'kanji': '鳥',
       'writing': 'とり',
-      'romaji': 'to ri'
+      'romaji': 'tori'
     },
     'cn': {
       'hanzi': '鸟',
@@ -193,7 +193,7 @@ const dictionary = {
     'jp': {
       'kanji': '猫',
       'writing': 'ねこ',
-      'romaji': 'ne ko'
+      'romaji': 'neko'
     },
     'cn': {
       'hanzi': '猫',
@@ -204,7 +204,7 @@ const dictionary = {
     'jp': {
       'kanji': '犬',
       'writing': 'いぬ',
-      'romaji': 'i nu'
+      'romaji': 'inu'
     },
     'cn': {
       'hanzi': '狗',
@@ -215,7 +215,7 @@ const dictionary = {
     'jp': {
       'kanji': '馬',
       'writing': 'うま',
-      'romaji': 'u ma'
+      'romaji': 'uma'
     },
     'cn': {
       'hanzi': '马',
@@ -226,7 +226,7 @@ const dictionary = {
     'jp': {
       'kanji': '羊',
       'writing': 'ひつじ',
-      'romaji': 'hi tsu ji'
+      'romaji': 'hitsuji'
     },
     'cn': {
       'hanzi': '羊',
@@ -237,7 +237,7 @@ const dictionary = {
     'jp': {
       'kanji': '牛',
       'writing': 'うし',
-      'romaji': 'u shi'
+      'romaji': 'ushi'
     },
     'cn': {
       'hanzi': '牛',
@@ -248,7 +248,7 @@ const dictionary = {
     'jp': {
       'kanji': '象',
       'writing': 'ぞう',
-      'romaji': 'zo u'
+      'romaji': 'zou'
     },
     'cn': {
       'hanzi': '象',
@@ -259,7 +259,7 @@ const dictionary = {
     'jp': {
       'kanji': '熊',
       'writing': 'くま',
-      'romaji': 'ku ma'
+      'romaji': 'kuma'
     },
     'cn': {
       'hanzi': '熊',
@@ -270,7 +270,7 @@ const dictionary = {
     'jp': {
       'kanji': '縞馬',
       'writing': 'しま うま',
-      'romaji': 'shi ma u ma'
+      'romaji': 'shima uma'
     },
     'cn': {
       'hanzi': '斑马',
@@ -292,7 +292,7 @@ const dictionary = {
     'jp': {
       'kanji': 'バックパック',
       'writing': '',
-      'romaji': 'ba kku pa kku'
+      'romaji': 'bakku pakku'
     },
     'cn': {
       'hanzi': '背包',
@@ -303,7 +303,7 @@ const dictionary = {
     'jp': {
       'kanji': '傘',
       'writing': 'かさ',
-      'romaji': 'ka sa'
+      'romaji': 'kasa'
     },
     'cn': {
       'hanzi': '雨伞',
@@ -380,7 +380,7 @@ const dictionary = {
     'jp': {
       'kanji': '玉',
       'writing': 'たま',
-      'romaji': 'ta ma'
+      'romaji': 'tama'
     },
     'cn': {
       'hanzi': '球',
@@ -391,7 +391,7 @@ const dictionary = {
     'jp': {
       'kanji': '来手',
       'writing': 'き て',
-      'romaji': 'ki te'
+      'romaji': 'kite'
     },
     'cn': {
       'hanzi': '风筝',
@@ -457,7 +457,7 @@ const dictionary = {
     'jp': {
       'kanji': '瓶',
       'writing': 'びん',
-      'romaji': 'bi n'
+      'romaji': 'bin'
     },
     'cn': {
       'hanzi': '瓶子',
@@ -512,7 +512,7 @@ const dictionary = {
     'jp': {
       'kanji': '匙',
       'writing': 'さじ',
-      'romaji': 'sa ji'
+      'romaji': 'saji'
     },
     'cn': {
       'hanzi': '调羹',
@@ -523,7 +523,7 @@ const dictionary = {
     'jp': {
       'kanji': '器',
       'writing': 'うつわ',
-      'romaji': 'u tsu wa'
+      'romaji': 'utsuwa'
     },
     'cn': {
       'hanzi': '碗',
@@ -545,7 +545,7 @@ const dictionary = {
     'jp': {
       'kanji': '林檎',
       'writing': 'りん ご',
-      'romaji': 'ri n go'
+      'romaji': 'rin go'
     },
     'cn': {
       'hanzi': '苹果',
@@ -567,7 +567,7 @@ const dictionary = {
     'jp': {
       'kanji': '蜜柑',
       'writing': 'み かん',
-      'romaji': 'mi ka n'
+      'romaji': 'mi kan'
     },
     'cn': {
       'hanzi': '橘子',
@@ -589,7 +589,7 @@ const dictionary = {
     'jp': {
       'kanji': '人参',
       'writing': 'にん じん',
-      'romaji': 'ni n ji n'
+      'romaji': 'nin jin'
     },
     'cn': {
       'hanzi': '胡萝卜',
@@ -666,7 +666,7 @@ const dictionary = {
     'jp': {
       'kanji': '鉢植え',
       'writing': 'はち う +',
-      'romaji': 'ha chi u e'
+      'romaji': 'hachi u e'
     },
     'cn': {
       'hanzi': '盆植',
@@ -688,7 +688,7 @@ const dictionary = {
     'jp': {
       'kanji': '食卓',
       'writing': 'しょく たく',
-      'romaji': 'sho ku ta ku'
+      'romaji': 'shoku taku'
     },
     'cn': {
       'hanzi': '餐桌',
@@ -699,7 +699,7 @@ const dictionary = {
     'jp': {
       'kanji': 'お手洗い',
       'writing': '+ て あら +',
-      'romaji': 'o te a ra i'
+      'romaji': 'o te ara i'
     },
     'cn': {
       'hanzi': '洗手间',
@@ -719,9 +719,9 @@ const dictionary = {
   },
   'laptop': {
     'jp': {
-      'kanji': 'ノートパソコン',
+      'kanji': 'ラップトップ',
       'writing': '',
-      'romaji': 'nō to pa so ko n'
+      'romaji': 'rappu toppu'
     },
     'cn': {
       'hanzi': '笔记本电脑',
@@ -732,7 +732,7 @@ const dictionary = {
     'jp': {
       'kanji': 'マウス',
       'writing': '',
-      'romaji': 'mausu'
+      'romaji': 'ma u su'
     },
     'cn': {
       'hanzi': '鼠标',
@@ -765,7 +765,7 @@ const dictionary = {
     'jp': {
       'kanji': '携帯電話',
       'writing': 'けい たい でん わ',
-      'romaji': 'ke i ta i de n wa'
+      'romaji': 'kei tai den wa'
     },
     'cn': {
       'hanzi': '手机',
@@ -776,7 +776,7 @@ const dictionary = {
     'jp': {
       'kanji': '電子レンジ',
       'writing': 'でん し + + +',
-      'romaji': 'de n shi re n ji'
+      'romaji': 'den shi ren ji'
     },
     'cn': {
       'hanzi': '微波炉',
@@ -820,7 +820,7 @@ const dictionary = {
     'jp': {
       'kanji': '冷蔵庫',
       'writing': 'れい ぞう こ',
-      'romaji': 're i zo u ko'
+      'romaji': 'rei zou ko'
     },
     'cn': {
       'hanzi': '冰箱',
@@ -831,7 +831,7 @@ const dictionary = {
     'jp': {
       'kanji': '本',
       'writing': 'ほん',
-      'romaji': 'ho n'
+      'romaji': 'hon'
     },
     'cn': {
       'hanzi': '书',
@@ -842,7 +842,7 @@ const dictionary = {
     'jp': {
       'kanji': '時計',
       'writing': 'と けい',
-      'romaji': 'to ke i'
+      'romaji': 'to kei'
     },
     'cn': {
       'hanzi': '时钟',
@@ -853,7 +853,7 @@ const dictionary = {
     'jp': {
       'kanji': '花瓶',
       'writing': 'か びん',
-      'romaji': 'ka bi n'
+      'romaji': 'ka bin'
     },
     'cn': {
       'hanzi': '花瓶',
@@ -864,7 +864,7 @@ const dictionary = {
     'jp': {
       'kanji': '鋏',
       'writing': 'はさみ',
-      'romaji': 'ha sa mi'
+      'romaji': 'hasami'
     },
     'cn': {
       'hanzi': '剪刀',
